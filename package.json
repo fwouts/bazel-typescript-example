@@ -1,0 +1,11 @@
+{
+  "name": "exp-bazel-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@bazel/typescript": "^0.11.1",
+    "source-map-support": "^0.5.4",
+    "typescript": "^2.7.2"
+  }
+}
