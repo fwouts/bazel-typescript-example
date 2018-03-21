@@ -12,10 +12,21 @@ nodejs_binary(
 ts_library(
     name = "main",
     srcs = ["main.ts"],
-    deps = [":dep"],
+    deps = [
+        ":dep",
+        ":react",
+    ],
+    tsconfig = "//:tsconfig.json",
 )
 
 ts_library(
     name = "dep",
     srcs = ["dep.ts"],
+    tsconfig = "//:tsconfig.json",
+)
+
+ts_library(
+    name = "react",
+    srcs = ["react.tsx"],
+    tsconfig = "//:tsconfig.json",
 )
